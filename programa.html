@@ -2,11 +2,21 @@
 <meta charset="UTF-8">
 
 <script>
+
+    function pulaLinha(){
+        document.write("<br>");
+    }
+
     var ano = 2016;
-    var puloLinha = "<br><br>";
+
     document.write("Flávio nasceu em " + (ano - 1977) 
-    + " anos" + puloLinha);
-    document.write("Joaquim nasceu em " + (ano - 1996) + " anos" + puloLinha);
+    + " anos");
+
+    pulaLinha();
+
+    document.write("Joaquim nasceu em " + (ano - 1996) + " anos");
+
+    pulaLinha();
 
     ano = 2017;
     document.write("Barney nasceu em " + (ano - 1976) + " anos");
