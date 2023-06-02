@@ -7,18 +7,19 @@
         document.write("<br>");
     }
 
+    function mostra(sunny){
+        document.write(sunny);
+        pulaLinha();
+    }
+
     var ano = 2016;
 
-    document.write("Flávio nasceu em " + (ano - 1977) 
-    + " anos");
+    mostra("Flávio nasceu em " + (ano - 1977) + " anos");
 
-    pulaLinha();
-
-    document.write("Joaquim nasceu em " + (ano - 1996) + " anos");
-
-    pulaLinha();
+    mostra("Joaquim nasceu em " + (ano - 1996) + " anos");
 
     ano = 2017;
-    document.write("Barney nasceu em " + (ano - 1976) + " anos");
+
+    mostra("Barney nasceu em " + (ano - 1976) + " anos");
 
 </script>
