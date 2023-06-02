@@ -1,13 +1,20 @@
 <meta charset="UTF-8">
-
-<h3>Álcool ou Gasolina?</h3>
-
 <script>
-    var tanque = 40;
-    var caminhoComGasolina = 480;
-    var consumoDeGasolina = caminhoComGasolina/tanque;
-    var caminhoComAlcool = 300;
-    var consumoDeAlcool = caminhoComAlcool/tanque;
-    document.write("<br>O cosumo de Gasolina é "+ consumoDeGasolina + " km/L");
-    document.write("<br> O cosumo de Álcool é "+ consumoDeAlcool + " km/L");
+
+    function pulaLinha() {
+        document.write("<br>");
+        document.write("<hr>");
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write("<big>"+frase+"</big>");
+        pulaLinha();
+    }
+
+    var ano = 2019;
+    mostra("Eu nasci em : " + (ano - 25));
+    mostra("Adriano nasceu em : " + (ano - 26));
+    mostra("Paulo nasceu em : " + (ano - 32));
+
 </script>
