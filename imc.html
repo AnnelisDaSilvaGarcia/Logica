@@ -12,14 +12,12 @@
         pulaLinha();
     }
 
-    var ano = 2016;
+    function calculaImc(peso, altura){
+        var imc = peso / (altura * altura);
+        mostra("O imc calculado é " + imc);
+    }
 
-    mostra("Flávio nasceu em " + (ano - 1977) + " anos");
-
-    mostra("Joaquim nasceu em " + (ano - 1996) + " anos");
-
-    ano = 2017;
-
-    mostra("Barney nasceu em " + (ano - 1976) + " anos");
+    calculaImc(59, 1.68);
+    calculaImc(68, 1.72);
 
 </script>
