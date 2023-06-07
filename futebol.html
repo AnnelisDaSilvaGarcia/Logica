@@ -18,8 +18,12 @@
     var pontos = vitorias * 3 + empates;
     mostra("Os pontos do seu time é " +pontos);
 
-    mostra("Seu time está melhor do que o ano passado");
-    mostra("Seu time está pior do que o ano passado");
-    mostra("Seu time está igual do que o ano passado");
+    if(pontos>28){
+        mostra("Seu time está melhor do que o ano passado");
+    }else if(pontos<28){
+        mostra("Seu time está pior do que o ano passado");
+    }else if(pontos==28){
+        mostra("Seu time está igual do que o ano passado");
+    }
 
 </script>
