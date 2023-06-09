@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha(){
+        document.write("<br>");
+    }
+
+    function mostra(sunny){
+        document.write(sunny);
+        pulaLinha();
+    }
+
+    function calculaImc(altura, peso){
+        return Math.round(peso / (altura*altura));
+    }
+
+    for(var i = 1; i<=10;i++){
+        mostra("\n" + 7 +" x " + i + " = " +(7*i));
+    }
+    mostra("FIM")
+
+</script>
